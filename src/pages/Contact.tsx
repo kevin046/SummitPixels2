@@ -8,42 +8,41 @@ const Contact: React.FC = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    "name": "Contact Summit Pixels Photography Toronto",
-    "description": "Contact Summit Pixels Photography for professional photography services in Toronto. Wedding photography, portraits, events, and commercial photography.",
+    "name": "Contact Summit Pixels | Toronto Digital Services",
+    "description": "Contact Summit Pixels for professional web development, SEO, and digital marketing services in Toronto.",
     "url": "https://summitpixels.com/contact",
     "mainEntity": {
-      "@type": "LocalBusiness",
-      "name": "Summit Pixels Photography",
+      "@type": "ProfessionalService",
+      "name": "Summit Pixels Inc.",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "123 Photography Lane",
+        "streetAddress": "1200 Bay Street, Suite 202",
         "addressLocality": "Toronto",
         "addressRegion": "ON",
-        "postalCode": "M5V 3A8",
+        "postalCode": "M5R 2A5",
         "addressCountry": "CA"
       },
-      "telephone": "+1-416-555-0123",
-      "email": "info@summitpixels.com",
+      "telephone": "+1-647-873-8818",
+      "email": "hello@summitpixels.com",
       "url": "https://summitpixels.com",
-      "openingHours": "Mo-Su 09:00-18:00",
-      "priceRange": "$$"
+      "openingHours": "Mo-Fr 09:00-18:00"
     }
   }
 
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Contact Summit Pixels Photography | Toronto Photographer"
-        description="Contact Summit Pixels Photography for professional photography services in Toronto. Wedding photography, portraits, events, and commercial photography."
+        title="Contact Summit Pixels | Toronto Digital Services"
+        description="Ready to transform your digital presence? Contact Summit Pixels for professional web development, SEO, and digital marketing services in Toronto. Get started today!"
         keywords={[
-          "Toronto photographer contact",
+          "Toronto web development",
+          "Toronto SEO services",
+          "digital marketing Toronto",
           "Summit Pixels contact",
-          "photography contact Toronto",
-          "wedding photographer contact Toronto",
-          "portrait photographer contact Toronto",
-          "event photographer contact Toronto",
-          "commercial photographer contact Toronto",
-          "Toronto photography contact"
+          "custom software Toronto",
+          "UI/UX design Toronto",
+          "app development Toronto",
+          "consulting Toronto"
         ]}
         canonicalUrl="/contact"
         ogImage="/images/contact-hero.jpg"
@@ -51,9 +50,9 @@ const Contact: React.FC = () => {
       />
       
       <div className="container mx-auto px-4 py-20">
-        <h1 className="text-4xl font-bold text-center mb-8">Contact Toronto Photographer</h1>
+        <h1 className="text-4xl font-bold text-center mb-8">Contact Summit Pixels</h1>
         <p className="text-xl text-gray-600 text-center max-w-3xl mx-auto">
-          Ready to capture your special moments? Contact Summit Pixels Photography for professional photography services in Toronto. Book your session today!
+          Ready to elevate your digital presence? Contact Summit Pixels for professional web development, SEO, and digital marketing services in Toronto. Let’s build something great together.
         </p>
       </div>
       

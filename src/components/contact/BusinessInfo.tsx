@@ -16,12 +16,12 @@ const BusinessInfo: React.FC = () => {
   const businessStats = [
     {
       icon: Users,
-      number: "500+",
+      number: "40+",
       label: "Happy Clients"
     },
     {
       icon: Award,
-      number: "50+",
+      number: "3",
       label: "Awards Won"
     },
     {

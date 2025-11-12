@@ -38,7 +38,14 @@ const Home: React.FC = () => {
       <SEOHead
         title="SummitPixels - Professional Digital Services"
         description="Transform your digital presence with SummitPixels. We offer professional photography, web development, and digital marketing services in Toronto."
-        keywords="digital services, photography, web development, Toronto, professional services, SummitPixels"
+        keywords={[
+          'digital services',
+          'photography',
+          'web development',
+          'Toronto',
+          'professional services',
+          'SummitPixels'
+        ]}
         canonicalUrl="/"
         structuredData={{
           '@context': 'https://schema.org',

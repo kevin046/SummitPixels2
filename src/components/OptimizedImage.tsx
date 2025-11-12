@@ -146,7 +146,7 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
         </picture>
       )}
       
-      <style jsx>{`
+      <style>{`
         @keyframes pulse {
           0% {
             opacity: 1;

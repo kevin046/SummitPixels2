@@ -75,6 +75,7 @@ class PerformanceMonitor {
       let clsEntries: any[] = [];
 
       this.observer = new PerformanceObserver((list) => {
+        const entries = list.getEntries();
         entries.forEach((entry: any) => {
           if (!entry.hadRecentInput) {
             clsEntries.push(entry);
