@@ -1,0 +1,9 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" fill="none" />
+  <!-- Mountain base in black -->
+  <path d="M8 50 L24 22 L32 34 L40 22 L56 50 Z" fill="#000000" />
+  <!-- Summit accent in blue -->
+  <path d="M32 34 L40 22 L44 28 Z" fill="#2563EB" />
+  <!-- Ground line -->
+  <rect x="8" y="52" width="48" height="2" fill="#000000" />
+</svg>

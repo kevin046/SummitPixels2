@@ -1,0 +1,39 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://summitpixels.com/sitemap.xml
+
+# Crawl-delay for bots that support it
+Crawl-delay: 1
+
+# Block specific bots that are known to be problematic
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Block access to specific directories and files
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /*.pdf$
+Disallow: /*.doc$
+Disallow: /*.xls$
+
+# Allow access to important resources
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Host directive (helps with canonicalization)
+Host: https://summitpixels.com
+
+# Clean-param for URL parameters
+Clean-param: ref /

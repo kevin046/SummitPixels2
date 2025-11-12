@@ -1,0 +1,6 @@
+<svg width="260" height="40" viewBox="0 0 260 40" xmlns="http://www.w3.org/2000/svg">
+  <rect width="260" height="40" fill="none" />
+  <!-- Wordmark: Summit (black), Pixels (blue) -->
+  <text x="0" y="28" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="26" fill="#000000" font-weight="700">Summit</text>
+  <text x="112" y="28" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="26" fill="#2563EB" font-weight="700">Pixels</text>
+</svg>

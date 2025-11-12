@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 160" width="320" height="160" aria-labelledby="title desc" role="img">
+  <title id="title">SummitPixels Logo</title>
+  <desc id="desc">Stylized mountain mark with stacked SUMMIT PIXELS wordmark</desc>
+  <!-- Mountain mark -->
+  <g fill="none" stroke="#000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left peak -->
+    <path d="M80 90 L120 40 L160 90"/>
+    <!-- Inner left ridge -->
+    <path d="M100 90 L120 62 L140 90"/>
+    <!-- Right peak -->
+    <path d="M160 90 L200 40 L240 90"/>
+    <!-- Inner right ridge -->
+    <path d="M180 90 L200 62 L220 90"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g fill="#000" font-family="Inter, Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="160" y="125" font-size="26" font-weight="700" letter-spacing="2">SUMMIT</text>
+    <text x="160" y="148" font-size="18" font-weight="600" letter-spacing="3">PIXELS</text>
+  </g>
+</svg>
