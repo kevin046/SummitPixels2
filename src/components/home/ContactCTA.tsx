@@ -86,13 +86,11 @@ const ContactCTA: React.FC = () => {
               <h3 className="text-2xl font-semibold mb-6">Quick Contact</h3>
               
               <form action="https://formsubmit.co/hello@summitpixels.com" method="POST" className="space-y-4">
-                <input type="hidden" name="_subject" value="Quick contact inquiry from SummitPixels home" />
-                <input type="hidden" name="_next" value="https://summitpixels.com/?quick_contact=1" />
-                <input type="hidden" name="_captcha" value="true" />
                 <div>
                   <input
                     type="text"
                     name="name"
+                    required
                     placeholder="Your Name"
                     className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent"
                   />
@@ -102,6 +100,7 @@ const ContactCTA: React.FC = () => {
                   <input
                     type="email"
                     name="email"
+                    required
                     placeholder="Your Email"
                     className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:border-transparent"
                   />

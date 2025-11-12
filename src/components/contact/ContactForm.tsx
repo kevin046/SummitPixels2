@@ -20,7 +20,6 @@ const ContactForm: React.FC = () => {
     subject: '',
     message: ''
   })
-  
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -30,6 +29,16 @@ const ContactForm: React.FC = () => {
   }
 
   const formAction = 'https://formsubmit.co/hello@summitpixels.com'
+  // Formsubmit hidden fields
+  const hiddenFields = {
+    _subject: 'New inquiry from SummitPixels contact page',
+    _next: 'https://summitpixels.com/contact?submitted=1',
+    _captcha: 'true',
+    _template: 'table',
+    _autoresponse: 'Thanks for contacting Summit Pixels. We will reply shortly.',
+    _honey: '',
+    _replyto: formData.email
+  }
 
   const subjects = [
     'General Inquiry',
@@ -72,9 +81,10 @@ const ContactForm: React.FC = () => {
             >
               <div className="bg-white rounded-2xl shadow-xl p-8">
                 <form action={formAction} method="POST" className="space-y-6">
-                  <input type="hidden" name="_subject" value="New inquiry from SummitPixels contact page" />
-                  <input type="hidden" name="_next" value="https://summitpixels.com/contact?submitted=1" />
-                  <input type="hidden" name="_captcha" value="true" />
+                  {/* Hidden fields */}
+                  {Object.entries(hiddenFields).map(([k, v]) => (
+                    <input key={k} type="hidden" name={k} value={v} />
+                  ))}
                   {/* Name Field */}
                   <div className="relative">
                     <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
