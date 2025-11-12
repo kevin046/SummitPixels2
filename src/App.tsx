@@ -11,11 +11,14 @@ import Contact from './pages/Contact'
 import Terms from './pages/Terms'
 import Privacy from './pages/Privacy'
 import NotFound from './pages/NotFound'
+import ScrollToTop from './components/shared/ScrollToTop'
+import RouteScrollToTop from './components/shared/RouteScrollToTop'
 
 function App() {
   return (
     <HelmetProvider>
       <BrowserRouter>
+        <RouteScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -29,6 +32,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+      <ScrollToTop />
       {process.env.NODE_ENV === 'development' && <SEOReport />}
     </HelmetProvider>
   )

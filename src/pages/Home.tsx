@@ -66,6 +66,7 @@ const Home: React.FC = () => {
       />
       
       <div className="min-h-screen">
+        <h1 className="sr-only">SummitPixels - Professional Digital Services</h1>
         <Hero />
         <ServicesPreview />
         <PortfolioPreview />

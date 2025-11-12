@@ -72,6 +72,7 @@ const Services: React.FC = () => {
         structuredData={structuredData}
       />
       
+      <h1 className="sr-only">Photography Services Toronto</h1>
       <ServiceCategories />
       <ProcessSteps />
       <PricingInfo />

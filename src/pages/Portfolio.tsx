@@ -47,6 +47,7 @@ const Portfolio: React.FC = () => {
         ogImage="/images/portfolio-hero.jpg"
         structuredData={structuredData}
       />
+      <h1 className="sr-only">Photography Portfolio Toronto</h1>
       <ProjectGallery />
       <CaseStudies />
     </div>
