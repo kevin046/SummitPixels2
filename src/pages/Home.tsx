@@ -46,7 +46,7 @@ const Home: React.FC = () => {
           'professional services',
           'SummitPixels'
         ]}
-        canonicalUrl="/"
+        canonicalUrl="https://summitpixels.com/"
         structuredData={{
           '@context': 'https://schema.org',
           '@type': 'LocalBusiness',

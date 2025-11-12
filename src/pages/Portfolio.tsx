@@ -43,7 +43,7 @@ const Portfolio: React.FC = () => {
           "Toronto photographer portfolio",
           "Summit Pixels portfolio"
         ]}
-        canonicalUrl="/portfolio"
+        canonicalUrl="https://summitpixels.com/portfolio"
         ogImage="/images/portfolio-hero.jpg"
         structuredData={structuredData}
       />

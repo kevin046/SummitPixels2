@@ -67,7 +67,7 @@ const Services: React.FC = () => {
           "Toronto photographer",
           "Summit Pixels services"
         ]}
-        canonicalUrl="/services"
+        canonicalUrl="https://summitpixels.com/services"
         ogImage="/images/services-hero.jpg"
         structuredData={structuredData}
       />

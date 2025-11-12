@@ -17,12 +17,13 @@ const NotFound: React.FC = () => {
         <p className="text-xl text-gray-600 mb-8 max-w-md mx-auto">
           The page you're looking for doesn't exist. It might have been moved or deleted.
         </p>
-        <Link
-          to="/"
-          className="inline-block bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors duration-200"
-        >
-          Go Back Home
-        </Link>
+        <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
+          <Link to="/" className="bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors duration-200">Home</Link>
+          <Link to="/services" className="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold border border-gray-200 hover:bg-gray-50 transition-colors">Services</Link>
+          <Link to="/portfolio" className="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold border border-gray-200 hover:bg-gray-50 transition-colors">Portfolio</Link>
+          <Link to="/contact" className="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold border border-gray-200 hover:bg-gray-50 transition-colors">Contact</Link>
+        </div>
+        <p className="text-gray-600">If you believe this is an error, please contact <a href="mailto:hello@summitpixels.com" className="text-gray-900 font-semibold hover:text-gray-700">hello@summitpixels.com</a>.</p>
       </div>
     </div>
   )

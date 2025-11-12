@@ -20,8 +20,7 @@ const ContactForm: React.FC = () => {
     subject: '',
     message: ''
   })
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+  
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -30,28 +29,7 @@ const ContactForm: React.FC = () => {
     })
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    setSubmitStatus('idle')
-
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setSubmitStatus('success')
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        company: '',
-        subject: '',
-        message: ''
-      })
-      // Reset status after 3 seconds
-      setTimeout(() => setSubmitStatus('idle'), 3000)
-    }, 2000)
-  }
+  const formAction = 'https://formsubmit.co/hello@summitpixels.com'
 
   const subjects = [
     'General Inquiry',
@@ -93,7 +71,10 @@ const ContactForm: React.FC = () => {
               viewport={{ once: true }}
             >
               <div className="bg-white rounded-2xl shadow-xl p-8">
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form action={formAction} method="POST" className="space-y-6">
+                  <input type="hidden" name="_subject" value="New inquiry from SummitPixels contact page" />
+                  <input type="hidden" name="_next" value="https://summitpixels.com/contact?submitted=1" />
+                  <input type="hidden" name="_captcha" value="true" />
                   {/* Name Field */}
                   <div className="relative">
                     <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
@@ -217,46 +198,13 @@ const ContactForm: React.FC = () => {
                   {/* Submit Button */}
                   <button
                     type="submit"
-                    disabled={isSubmitting}
-                    className={`w-full flex items-center justify-center px-8 py-4 rounded-lg font-semibold transition-all duration-200 ${
-                      isSubmitting
-                        ? 'bg-gray-300 cursor-not-allowed text-gray-700'
-                        : 'bg-gray-700 hover:bg-gray-600 text-white'
-                    }`}
+                    className="w-full flex items-center justify-center px-8 py-4 rounded-lg font-semibold transition-all duration-200 bg-gray-700 hover:bg-gray-600 text-white"
                   >
-                    {isSubmitting ? (
-                      <>
-                        <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-gray-100 mr-3"></div>
-                        Sending Message...
-                      </>
-                    ) : (
-                      <>
-                        <Send className="h-5 w-5 mr-2" />
-                        Send Message
-                      </>
-                    )}
+                    <Send className="h-5 w-5 mr-2" />
+                    Send Message
                   </button>
 
-                  {/* Status Messages */}
-                  {submitStatus === 'success' && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      className="bg-green-50 border border-green-200 rounded-lg p-4 text-green-700"
-                    >
-                      <strong>Success!</strong> Your message has been sent successfully. We'll get back to you soon!
-                    </motion.div>
-                  )}
-
-                  {submitStatus === 'error' && (
-                    <motion.div
-                      initial={{ opacity: 0, y: 10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-700"
-                    >
-                      <strong>Error!</strong> There was a problem sending your message. Please try again.
-                    </motion.div>
-                  )}
+                  
                 </form>
               </div>
             </motion.div>

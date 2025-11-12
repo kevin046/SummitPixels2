@@ -56,6 +56,10 @@ const CompanyStory: React.FC = () => {
                   src="https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=Modern%20tech%20office%20workspace%20with%20developers%20collaborating%2C%20clean%20minimalist%20design%2C%20natural%20lighting%2C%20professional%20environment&image_size=landscape_16_9"
                   alt="SummitPixels Team Collaboration"
                   className="w-full h-96 object-cover"
+                  loading="lazy"
+                  decoding="async"
+                  width={1280}
+                  height={384}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/20 to-transparent"></div>
               </div>

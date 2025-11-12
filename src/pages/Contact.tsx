@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
           "app development Toronto",
           "consulting Toronto"
         ]}
-        canonicalUrl="/contact"
+        canonicalUrl="https://summitpixels.com/contact"
         ogImage="/images/contact-hero.jpg"
         structuredData={structuredData}
       />
