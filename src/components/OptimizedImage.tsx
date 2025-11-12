@@ -58,23 +58,25 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
   };
 
   // Generate WebP srcset if not provided
+  const isExternalUrl = /^https?:\/\//.test(src);
+
   const generateSrcSet = () => {
     if (srcSet) return srcSet;
-    
+    // Avoid generating srcSet for external URLs like Unsplash
+    if (isExternalUrl) return undefined;
     const baseUrl = src.split('.').slice(0, -1).join('.');
     const extension = src.split('.').pop();
-    
     if (extension === 'jpg' || extension === 'jpeg' || extension === 'png') {
       return `${baseUrl}.webp 1x, ${baseUrl}@2x.webp 2x`;
     }
-    
     return undefined;
   };
 
   // Generate fallback srcset for older formats
   const generateFallbackSrcSet = () => {
     if (srcSet) return srcSet;
-    
+    // Avoid for external URLs; let browser handle original src
+    if (isExternalUrl) return undefined;
     const baseUrl = src.split('.').slice(0, -1).join('.');
     return `${baseUrl}@2x.${src.split('.').pop()} 2x`;
   };
