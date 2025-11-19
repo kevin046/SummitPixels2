@@ -9,38 +9,18 @@ const Home: React.FC = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Summit Pixels Photography",
+    "name": "Summit Pixels Inc.",
     "url": "https://summitpixels.com",
-    "description": "Professional photography services in Toronto. Capture life's precious moments with Summit Pixels - wedding, portrait, event, and commercial photography.",
-    "mainEntity": {
-      "@type": "LocalBusiness",
-      "name": "Summit Pixels Photography",
-      "description": "Professional photography services in Toronto",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "123 Photography Lane",
-        "addressLocality": "Toronto",
-        "addressRegion": "ON",
-        "postalCode": "M5V 3A8",
-        "addressCountry": "CA"
-      },
-      "telephone": "+1-416-555-0123",
-      "email": "info@summitpixels.com",
-      "url": "https://summitpixels.com",
-      "priceRange": "$$",
-      "openingHours": "Mo-Su 09:00-18:00",
-      "image": "https://summitpixels.com/images/logo.jpg"
-    }
+    "description": "IT services company in Toronto delivering web, mobile, cloud and digital solutions.",
   }
 
   return (
     <>
       <SEOHead
         title="SummitPixels - Professional Digital Services"
-        description="Transform your digital presence with SummitPixels. We offer professional photography, web development, and digital marketing services in Toronto."
+        description="Transform your digital presence with SummitPixels. We offer web development, mobile apps, cloud solutions, and digital strategy in Toronto."
         keywords={[
           'digital services',
-          'photography',
           'web development',
           'Toronto',
           'professional services',
@@ -49,17 +29,17 @@ const Home: React.FC = () => {
         canonicalUrl="https://summitpixels.com/"
         structuredData={{
           '@context': 'https://schema.org',
-          '@type': 'LocalBusiness',
-          name: 'SummitPixels',
-          description: 'Professional digital services in Toronto',
+          '@type': 'ProfessionalService',
+          name: 'Summit Pixels Inc.',
+          description: 'IT services in Toronto: web, mobile, cloud, digital strategy',
           url: 'https://summitpixels.com',
-          telephone: '+1-416-555-0123',
+          telephone: '+1-647-873-8818',
           address: {
             '@type': 'PostalAddress',
-            streetAddress: '123 Digital Lane',
+            streetAddress: '1200 Bay Street, Suite 202',
             addressLocality: 'Toronto',
             addressRegion: 'ON',
-            postalCode: 'M5V 3A1',
+            postalCode: 'M5R 2A5',
             addressCountry: 'CA',
           },
         }}

@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
               <div className="flex items-center justify-center h-32 w-32 md:h-40 md:w-40 rounded-xl">
                 <img
                   src="/branding/Summit%20Pixels%20Logo.svg"
-                  alt="Summit Pixels Photography - Professional Photography Services in Toronto"
+                  alt="Summit Pixels Inc. - IT Services in Toronto"
                   className="h-full w-full object-contain"
                   loading="eager"
                 />

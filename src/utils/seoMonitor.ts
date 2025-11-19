@@ -51,7 +51,7 @@ class SEOMonitor {
     }
     
     // Check if title contains primary keyword
-    if (!title.toLowerCase().includes('toronto') || !title.toLowerCase().includes('photography')) {
+    if (!title.toLowerCase().includes('toronto') || (!title.toLowerCase().includes('it services') && !title.toLowerCase().includes('web development') && !title.toLowerCase().includes('digital services'))) {
       console.warn('Title may not contain primary keywords');
       logEvent('SEO', 'Title Issue', 'Missing keywords');
     }
@@ -72,7 +72,7 @@ class SEOMonitor {
       }
       
       // Check if description contains primary keyword
-      if (!metaDescription.toLowerCase().includes('toronto') || !metaDescription.toLowerCase().includes('photography')) {
+      if (!metaDescription.toLowerCase().includes('toronto') || (!metaDescription.toLowerCase().includes('it services') && !metaDescription.toLowerCase().includes('web development') && !metaDescription.toLowerCase().includes('digital services'))) {
         console.warn('Meta description may not contain primary keywords');
         logEvent('SEO', 'Description Issue', 'Missing keywords');
       }
@@ -98,7 +98,7 @@ class SEOMonitor {
     // Check if H1 contains primary keyword
     h1Tags.forEach((h1, index) => {
       const text = h1.textContent || '';
-      if (!text.toLowerCase().includes('toronto') && !text.toLowerCase().includes('photography')) {
+      if (!text.toLowerCase().includes('toronto') && !text.toLowerCase().includes('it services') && !text.toLowerCase().includes('web development') && !text.toLowerCase().includes('digital services')) {
         console.warn(`H1 tag ${index + 1} may not contain primary keywords`);
         logEvent('SEO', 'H1 Issue', 'Missing keywords in H1');
       }

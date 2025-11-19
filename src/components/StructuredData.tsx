@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 interface StructuredDataProps {
-  type: 'Organization' | 'LocalBusiness' | 'Service' | 'ImageGallery' | 'AboutPage' | 'ContactPage';
+  type: 'Organization' | 'LocalBusiness' | 'Service' | 'CollectionPage' | 'AboutPage' | 'ContactPage';
   data: any;
 }
 
@@ -17,28 +17,26 @@ export const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) =>
       case 'Organization':
         return {
           ...baseData,
-          name: 'Summit Pixels',
+          name: 'Summit Pixels Inc.',
           url: 'https://summitpixels.com',
           logo: 'https://summitpixels.com/logo.png',
-          description: 'Professional photography services in Toronto, specializing in commercial, portrait, and event photography',
+          description: 'IT services in Toronto: web, mobile, cloud and digital solutions',
           address: {
             '@type': 'PostalAddress',
-            streetAddress: '123 Photography Lane',
+            streetAddress: '1200 Bay Street, Suite 202',
             addressLocality: 'Toronto',
             addressRegion: 'ON',
-            postalCode: 'M5V 3A1',
+            postalCode: 'M5R 2A5',
             addressCountry: 'CA',
           },
           contactPoint: {
             '@type': 'ContactPoint',
-            telephone: '+1-416-555-0123',
+            telephone: '+1-647-873-8818',
             contactType: 'customer service',
             areaServed: 'CA',
             availableLanguage: 'English',
           },
           sameAs: [
-            'https://www.facebook.com/summitpixels',
-            'https://www.instagram.com/summitpixels',
             'https://www.linkedin.com/company/summitpixels',
           ],
           ...data,
@@ -47,16 +45,16 @@ export const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) =>
       case 'LocalBusiness':
         return {
           ...baseData,
-          name: 'Summit Pixels Photography',
+          name: 'Summit Pixels Inc.',
           image: 'https://summitpixels.com/logo.png',
-          telephone: '+1-416-555-0123',
-          email: 'info@summitpixels.com',
+          telephone: '+1-647-873-8818',
+          email: 'hello@summitpixels.com',
           address: {
             '@type': 'PostalAddress',
-            streetAddress: '123 Photography Lane',
+            streetAddress: '1200 Bay Street, Suite 202',
             addressLocality: 'Toronto',
             addressRegion: 'ON',
-            postalCode: 'M5V 3A1',
+            postalCode: 'M5R 2A5',
             addressCountry: 'CA',
           },
           geo: {
@@ -85,11 +83,11 @@ export const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) =>
       case 'Service':
         return {
           ...baseData,
-          name: data.name || 'Professional Photography Services',
-          description: data.description || 'High-quality photography services for all occasions',
+          name: data.name || 'IT Services',
+          description: data.description || 'Web, mobile, cloud and digital solutions',
           provider: {
             '@type': 'Organization',
-            name: 'Summit Pixels',
+            name: 'Summit Pixels Inc.',
             url: 'https://summitpixels.com',
           },
           areaServed: {
@@ -105,26 +103,25 @@ export const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) =>
           ...data,
         };
 
-      case 'ImageGallery':
+      case 'CollectionPage':
         return {
           ...baseData,
-          name: data.name || 'Summit Pixels Photography Portfolio',
-          description: data.description || 'Professional photography portfolio showcasing our best work',
+          name: data.name || 'Summit Pixels Portfolio',
+          description: data.description || 'Portfolio of IT projects: web, mobile, cloud',
           url: 'https://summitpixels.com/portfolio',
-          image: data.images || [],
           ...data,
         };
 
       case 'AboutPage':
         return {
           ...baseData,
-          name: data.name || 'About Summit Pixels Photography',
-          description: data.description || 'Learn about our photography studio and team',
+          name: data.name || 'About Summit Pixels Inc.',
+          description: data.description || 'Learn about our IT company and team',
           url: 'https://summitpixels.com/about',
           mainEntity: {
             '@type': 'Organization',
-            name: 'Summit Pixels',
-            description: 'Professional photography studio based in Toronto',
+            name: 'Summit Pixels Inc.',
+            description: 'IT services company based in Toronto',
           },
           ...data,
         };
@@ -132,14 +129,14 @@ export const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) =>
       case 'ContactPage':
         return {
           ...baseData,
-          name: data.name || 'Contact Summit Pixels Photography',
-          description: data.description || 'Get in touch with our photography studio',
+          name: data.name || 'Contact Summit Pixels Inc.',
+          description: data.description || 'Get in touch with our IT company',
           url: 'https://summitpixels.com/contact',
           mainEntity: {
             '@type': 'ContactPoint',
-            telephone: '+1-416-555-0123',
+            telephone: '+1-647-873-8818',
             contactType: 'customer service',
-            email: 'info@summitpixels.com',
+            email: 'hello@summitpixels.com',
           },
           ...data,
         };

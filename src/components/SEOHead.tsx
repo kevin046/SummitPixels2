@@ -21,7 +21,7 @@ interface SEOHeadProps {
 const SEOHead: React.FC<SEOHeadProps> = ({
   title,
   description,
-  keywords = 'photography, Toronto photography, professional photography, portrait photography, event photography, Summit Pixels',
+  keywords = 'IT services, web development, mobile apps, cloud solutions, Summit Pixels',
   canonicalUrl,
   ogImage = '/images/og-default.jpg',
   ogType = 'website',
@@ -34,7 +34,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({
   nofollow = false,
   structuredData
 }) => {
-  const siteName = 'Summit Pixels - Professional Photography in Toronto';
+  const siteName = 'Summit Pixels Inc. - IT Services in Toronto';
   const siteUrl = 'https://summitpixels.com';
   const fullTitle = title.includes('Summit Pixels') ? title : `${title} | Summit Pixels`;
   const fullCanonicalUrl = canonicalUrl ? `${siteUrl}${canonicalUrl}` : siteUrl;

@@ -188,7 +188,7 @@ const ServiceCategories: React.FC = () => {
                     <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                       <img
                         src={service.image}
-                        alt={`${service.title} Services - Professional Photography Solutions in Toronto`}
+                        alt={`${service.title} Services - IT Solutions in Toronto`}
                         className="w-full h-80 object-cover"
                         loading="lazy"
                       />

@@ -26,11 +26,11 @@ const Services: React.FC = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Professional Photography Services Toronto",
-    "description": "Comprehensive photography services in Toronto including wedding photography, portrait sessions, event coverage, and commercial photography.",
+    "name": "IT Services Toronto",
+    "description": "Web development, mobile apps, UI/UX, e-commerce, cloud and DevOps services in Toronto.",
     "provider": {
-      "@type": "LocalBusiness",
-      "name": "Summit Pixels Photography",
+      "@type": "Organization",
+      "name": "Summit Pixels Inc.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Toronto",
@@ -43,36 +43,35 @@ const Services: React.FC = () => {
       "name": "Toronto"
     },
     "serviceType": [
-      "Wedding Photography",
-      "Portrait Photography",
-      "Event Photography",
-      "Commercial Photography",
-      "Family Photography",
-      "Corporate Photography"
+      "Web Development",
+      "Mobile App Development",
+      "UI/UX Design",
+      "E-commerce Solutions",
+      "Cloud Solutions",
+      "DevOps Services"
     ]
   }
 
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Photography Services Toronto | Professional Photography"
-        description="Professional photography services in Toronto including wedding photography, portraits, events, and commercial shoots. Expert photographers for all occasions."
+        title="IT Services Toronto | Web, Mobile, Cloud Solutions"
+        description="Full-stack IT services in Toronto including web development, mobile apps, UI/UX, e-commerce, cloud and DevOps."
         keywords={[
-          "Toronto photography services",
-          "professional photography Toronto",
-          "wedding photography",
-          "portrait photography",
-          "event photography",
-          "commercial photography",
-          "Toronto photographer",
-          "Summit Pixels services"
+          "Toronto IT services",
+          "web development",
+          "mobile app development",
+          "UI UX design",
+          "e-commerce solutions",
+          "cloud solutions",
+          "DevOps services"
         ]}
         canonicalUrl="https://summitpixels.com/services"
         ogImage="/images/services-hero.jpg"
         structuredData={structuredData}
       />
       
-      <h1 className="sr-only">Photography Services Toronto</h1>
+      <h1 className="sr-only">IT Services Toronto</h1>
       <ServiceCategories />
       <ProcessSteps />
       <PricingInfo />

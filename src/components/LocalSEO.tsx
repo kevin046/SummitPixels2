@@ -24,16 +24,16 @@ interface LocalSEOProps {
 }
 
 export const LocalSEO: React.FC<LocalSEOProps> = ({
-  businessName = 'Summit Pixels Photography',
+  businessName = 'Summit Pixels Inc.',
   address = {
-    street: '123 Photography Lane',
+    street: '1200 Bay Street, Suite 202',
     city: 'Toronto',
     state: 'ON',
-    zipCode: 'M5V 3A1',
+    zipCode: 'M5R 2A5',
     country: 'Canada'
   },
-  phone = '+1-416-555-0123',
-  email = 'info@summitpixels.com',
+  phone = '+1-647-873-8818',
+  email = 'hello@summitpixels.com',
   hours = [
     {
       days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
@@ -78,16 +78,12 @@ export const LocalSEO: React.FC<LocalSEOProps> = ({
       closes: hour.close
     })),
     priceRange: '$$',
-    servesCuisine: 'Photography Services',
-    acceptsReservations: 'true',
     areaServed: {
       '@type': 'City',
       name: 'Toronto'
     },
     hasMap: `https://www.google.com/maps/search/?api=1&query=${coordinates.lat},${coordinates.lng}`,
     sameAs: [
-      'https://www.facebook.com/summitpixels',
-      'https://www.instagram.com/summitpixels',
       'https://www.linkedin.com/company/summitpixels'
     ]
   };
@@ -129,7 +125,7 @@ export const LocalSEO: React.FC<LocalSEOProps> = ({
       ))}
       
       {/* Toronto-specific Keywords */}
-      <meta name="keywords" content={`Toronto photography, ${address.city} photographer, GTA photography services, Ontario professional photography`} />
+      <meta name="keywords" content={`Toronto IT services, ${address.city} web development, mobile app development, cloud solutions, Summit Pixels`} />
     </Helmet>
   );
 };

@@ -9,31 +9,23 @@ const About: React.FC = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    "name": "About Summit Pixels Photography",
-    "description": "Learn about Summit Pixels Photography, our passion for capturing life's precious moments, and our commitment to excellence in Toronto photography.",
+    "name": "About Summit Pixels Inc.",
+    "description": "Learn about Summit Pixels Inc., an IT company providing web, mobile, cloud and digital solutions in Toronto.",
     "url": "https://summitpixels.com/about",
     "mainEntity": {
       "@type": "Organization",
-      "name": "Summit Pixels Photography",
-      "description": "Professional photography studio in Toronto specializing in weddings, portraits, events, and commercial photography.",
-      "founder": {
-        "@type": "Person",
-        "name": "Photographer Name",
-        "jobTitle": "Professional Photographer",
-        "description": "Award-winning photographer with over 10 years of experience in wedding and portrait photography."
-      },
+      "name": "Summit Pixels Inc.",
+      "description": "IT services company in Toronto",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Toronto",
         "addressRegion": "ON",
         "addressCountry": "CA"
       },
-      "telephone": "+1-416-555-0123",
-      "email": "info@summitpixels.com",
+      "telephone": "+1-647-873-8818",
+      "email": "hello@summitpixels.com",
       "url": "https://summitpixels.com",
       "sameAs": [
-        "https://www.instagram.com/summitpixels",
-        "https://www.facebook.com/summitpixels",
         "https://www.linkedin.com/company/summitpixels"
       ]
     }
@@ -42,19 +34,17 @@ const About: React.FC = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="About Summit Pixels Photography | Toronto Photography Studio"
-        description="Learn about Summit Pixels Photography, Toronto's premier photography studio. Our team of professional photographers specializes in weddings, portraits, and events."
+        title="About Summit Pixels Inc. | Toronto IT Company"
+        description="Learn about Summit Pixels Inc., Toronto’s IT company providing web development, mobile apps, cloud solutions, and digital strategy."
         keywords={[
-          "Toronto photography studio",
+          "Toronto IT company",
           "Summit Pixels about",
-          "professional photographers Toronto",
-          "wedding photographers Toronto",
-          "portrait photographers Toronto",
-          "event photographers Toronto",
-          "Toronto photography team",
-          "photography studio Toronto"
+          "web development team",
+          "mobile app developers",
+          "cloud solutions",
+          "digital strategy"
         ]}
-        canonicalUrl="/about"
+        canonicalUrl="https://summitpixels.com/about"
         ogImage="/images/about-team.jpg"
         structuredData={structuredData}
       />

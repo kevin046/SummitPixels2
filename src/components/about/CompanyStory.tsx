@@ -31,7 +31,7 @@ const CompanyStory: React.FC = () => {
             >
               <div className="prose prose-lg text-gray-600">
                 <p className="text-lg leading-relaxed">
-                  SummitPixels was founded in 2018 as a solo practice with a belief that technology can transform businesses and create meaningful digital experiences. What started from a single desk and a relentless curiosity has grown into a full‑service digital studio serving clients across Canada.
+                  SummitPixels was founded in 2018 as a solo practice with a belief that technology can transform businesses and create meaningful digital experiences. What started from a single desk and a relentless curiosity has grown into a full‑service IT company serving clients across Canada.
                 </p>
                 
                 <p className="text-lg leading-relaxed">
@@ -39,7 +39,7 @@ const CompanyStory: React.FC = () => {
                 </p>
                 
                 <p className="text-lg leading-relaxed">
-                  Today, SummitPixels continues that vision as a single‑member studio partnering with other professionals when needed. The core values remain the same: innovation, quality, and long‑term partnership.
+                  Today, SummitPixels continues that vision as an independent company partnering with other professionals when needed. The core values remain the same: innovation, quality, and long‑term partnership.
                 </p>
               </div>
             </motion.div>
