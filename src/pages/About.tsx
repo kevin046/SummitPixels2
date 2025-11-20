@@ -30,8 +30,8 @@ const About: React.FC = () => {
       ],
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "150"
+        "ratingValue": 4.9,
+        "reviewCount": 150
       }
     }
   }
