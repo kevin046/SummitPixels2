@@ -27,7 +27,12 @@ const About: React.FC = () => {
       "url": "https://summitpixels.com",
       "sameAs": [
         "https://www.linkedin.com/company/summitpixels"
-      ]
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "150"
+      }
     }
   }
 
